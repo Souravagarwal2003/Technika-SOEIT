@@ -89,14 +89,14 @@ body {
 nav {
   position: sticky;
   top: 0;
-  background:  rgba(154, 226, 255, 0.173);
+  background: rgba(154, 226, 255, 0.173);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   z-index: 999;
 }
 
 .unlogo {
-  width: 347px;    
+  width: 347px;
   background-color: rgba(71, 176, 251, 0.808);
   box-shadow: 3px 11px 20px 0px rgba(71, 143, 251, 0.808);
   border-radius: 20px;
@@ -113,7 +113,7 @@ nav {
   padding: 0.5rem 0;
   margin: 0;
   gap: 4rem;
-  
+
   font-size: 1.5vw;
 
 }
@@ -257,9 +257,10 @@ p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-   font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif;
   z-index: 999;
   background-color: transparent;
+  text-shadow: 0 0 10px #000000;
   color: rgb(58, 169, 221);
   border: none;
   outline: none;
@@ -307,9 +308,11 @@ header h1 {
   0% {
     background-position: 0% 0%;
   }
+
   50% {
     background-position: 100% 100%;
   }
+
   100% {
     background-position: 0% 0%;
   }
@@ -321,16 +324,19 @@ header h1 {
     opacity: 0;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
+
   25% {
     transform: scale(1.5);
     opacity: 1;
     text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
   }
+
   50% {
     transform: scale(1);
     opacity: 1;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0.3);
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -563,6 +569,15 @@ header h3 {
     margin-right: 232px;
     margin-top: 2rem;
   }
+
+  .side-image img {
+    width: 455%;
+    height: auto;
+
+    object-fit: cover;
+    overflow: hidden;
+    user-select: none;
+  }
 }
 
 @media (max-width: 430px) {
@@ -571,6 +586,15 @@ header h3 {
     position: sticky;
     margin-right: 145px;
     margin-top: 2rem;
+  }
+
+  .side-image img {
+    width: 455%;
+    height: auto;
+
+    object-fit: cover;
+    overflow: hidden;
+    user-select: none;
   }
 }
 
@@ -581,6 +605,15 @@ header h3 {
     margin-right: 281px;
     margin-top: 2rem;
   }
+
+  .side-image img {
+    width: 455%;
+    height: auto;
+
+    object-fit: cover;
+    overflow: hidden;
+    user-select: none;
+  }
 }
 
 @media (max-width: 360px) {
@@ -589,6 +622,15 @@ header h3 {
     position: sticky;
     margin-right: 220px;
     margin-top: 2rem;
+  }
+
+  .side-image img {
+    width: 455%;
+    height: auto;
+
+    object-fit: cover;
+    overflow: hidden;
+    user-select: none;
   }
 
   .unlogo {
@@ -625,21 +667,30 @@ header h3 {
     overflow: hidden;
     border-radius: 12px;
   }
+
+  .side-image img {
+    width: 455%;
+    height: auto;
+
+    object-fit: cover;
+    overflow: hidden;
+    user-select: none;
+  }
 }
 
 .main-content {
-    align-items: center;
-    width: 90vw;
-    max-width: 120rem;
-    text-align: center;
-    margin: 2rem 0rem 4rem; 
-    background:  rgba(255, 255, 255, 0);
+  align-items: center;
+  width: 90vw;
+  max-width: 120rem;
+  text-align: center;
+  margin: 2rem 0rem 4rem;
+  background: rgba(255, 255, 255, 0);
   border: 1px solid rgba(0, 0, 0, 0);
   backdrop-filter: blur(10px);
-    border-radius: 32px;
-    box-shadow: inset 0 0px 20px #88edff;
-    animation: fadeIn 1s ease forwards;
-    padding: 2rem 0rem 2rem 0rem;
+  border-radius: 32px;
+  box-shadow: inset 0 0px 20px #88edff;
+  animation: fadeIn 1s ease forwards;
+  padding: 2rem 0rem 2rem 0rem;
 
 }
 
@@ -648,7 +699,7 @@ main {
   width: 90vw;
   max-width: 900px;
   margin: 0 4rem auto;
-  background:  rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
   border: 1px solid rgba(0, 0, 0, 0);
   backdrop-filter: blur(10px);
   padding: 2rem 2.5rem;
@@ -657,7 +708,8 @@ main {
   box-shadow: inset 0 0px 45px #88edff;
   animation: fadeInUp 1s ease forwards;
 }
-.background5{
+
+.background5 {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.221), rgba(0, 0, 0, 0.5)), url("../images/bgimg5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -684,7 +736,7 @@ section {
 
 section h3 {
   text-align: center;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
   font-weight: 600;
   font-size: 1.8rem;
   border-bottom: 3px solid #6bdaf0;
@@ -767,7 +819,7 @@ section h3 {
   margin: 2rem 4rem;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow:  0 0 20px #88edff;
+  box-shadow: 0 0 20px #88edff;
   position: relative;
 }
 
@@ -795,9 +847,10 @@ section h3 {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.4rem;
-  color: #6bdaf0; background:  rgba(255, 255, 255, 0);
+  color: #6bdaf0;
+  background: rgba(255, 255, 255, 0);
   border: 1px solid rgba(0, 0, 0, 0);
-  backdrop-filter: blur(5px);  
+  backdrop-filter: blur(5px);
   padding: 0 14px;
   border-radius: 8px;
   cursor: none;
@@ -810,8 +863,8 @@ section h3 {
 
 .slider-btn:hover,
 .slider-btn:focus {
-  
-  box-shadow:  0 0 15px #88edff;
+
+  box-shadow: 0 0 15px #88edff;
   background: #00ffccbb;
   color: #0a171d;
   outline: none;
@@ -867,7 +920,7 @@ section h3 {
   padding: 2rem 1rem;
   color: white;
   background: #0a1923d9;
-  background:  rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 19px;
@@ -889,7 +942,7 @@ section h3 {
 }
 
 /* Sponsor logos */
-.background6{
+.background6 {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.385), rgba(0, 0, 0, 0.5)), url("../images/bgimg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -899,7 +952,7 @@ section h3 {
   background-attachment: fixed;
 }
 
-.background7{
+.background7 {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.5)), url("../images/category.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -965,7 +1018,7 @@ section h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
   display: block;
   box-shadow: 0 0 10px #88edff;
   transition: transform 0.3s ease;
@@ -985,12 +1038,17 @@ section h3 {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 72px 6px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   opacity: 0;
   cursor: none;
   transition: opacity 0.5s ease-in-out;
+}
+
+.overlay-text {
+  padding: 98px 6px;
+  bottom: 90px;
+
 }
 
 .coordinator-container:hover .overlay-text {
@@ -1157,7 +1215,7 @@ section h3 {
 .event-list li a {
   color: #6bdaf0;
   font-weight: 600;
- cursor: none; 
+  cursor: none;
   text-decoration: none;
   transition: color 0.3s ease;
 }
