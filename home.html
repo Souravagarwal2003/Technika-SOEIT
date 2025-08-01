@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="images/technika_logo.jpg" />
+  <title>Technika 5.0 - NOVA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+
+<body>
+  <div class="background">
+    <div class="custom-cursor"></div>
+    <button id="scrollTopBtn" title="Go to top">↑ <br>Scroll to Top</button>
+    <div>
+      <audio id="audioplayer" autoplay loop hidden>
+        <source src="images/background_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="audio-container">
+        <audio id="audioplayer" playsinline autoplay>
+          <source src="images/opening_sound.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div id="particles-js"></div>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="/home.html">HOME</a></li>
+          <li><a href="/categories.html">CATEGORIES</a></li>
+          <li><a href="/previous_year.html">HIGHLIGHTS</a></li>
+          <li><a href="/sponsor.html">SPONSORS</a></li>
+        </ul>
+      </nav>
+
+      <header id="home" role="banner" aria-label="Event Poster Section">
+        <h1 class="highlight">
+          TECHNIKA 5.0
+        </h1>
+        <h3>NOVA - Unleash The Spark of Tomorrow</h3>
+        <h2>
+          <div>
+            <img src="images/University Logo.png" alt="Arka Jain Logo" class="unlogo" />
+            <br>
+            <br>
+          </div><br>School Of Engineering & IT Fest
+        </h2>
+        <div class="body">
+          <div class="card-container">
+            <div class="card" id="flipCard">
+              <div class="card-front">
+                <img src="images/poster.jpg" alt="Technika 5.0 Event Poster" id="makeItRain" onmouseover="frame()"
+                  class="poster" />
+              </div>
+              <div class="card-back">
+                <img src="images/event page.jpg" class="poster" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="bgimg">
+      <br>
+
+      <div class="body-flex-container">
+        <main>
+          
+          <section id="introduction" tabindex="0" class="section-fade-in">
+            <h3>About Technika 5.0</h3>
+            <p>“Technika 5.0” – Nova: Unleashing the Spark of Tomorrow
+              Welcome to Technika 5.0, the annual flagship technical
+              fest of ARKA JAIN University's School of Engineering and IT.
+              This year, under the visionary theme “Nova: Unleashing
+              the Spark of Tomorrow,” we invite you to be part of a
+              transformative celebration where innovation meets
+              imagination and the future begins today.</p>
+            <h3>Why Technika 5.0?</h3>
+            <p>Technika 5.0 is more than just a festival—it's a
+              convergence of creativity, intellect, and groundbreaking
+              technology. Designed to empower budding engineers,
+              developers, and tech enthusiasts, this fest offers a dynamic
+              platform to demonstrate talent, build connections, and
+              solve real-world challenges.</p>
+            <p>From high-impact project demonstrations to robotics
+              showdowns, model-making, and tech battles, Technika
+              5.0 is crafted to ignite minds and push the boundaries of
+              innovation. Whether you're a seasoned competitor or a
+              first-time participant, you'll find a vibrant environment that
+              encourages exploration, invention, and excellence.</p>
+            <p>Our distinguished speakers, celebrated leaders in their
+              respective domains, will share firsthand insights, real-world
+              experiences, and actionable advice to help you
+              navigate and thrive in today's rapidly evolving tech
+              ecosystem. These aren't just lectures—they're interactive
+              conversations with innovators who are actively shaping the
+              global technology landscape.</p>
+            <p>Whether you're curious about the future of deep tech or
+              aspiring to launch your own startup, these sessions will
+              equip you with strategic knowledge, inspiration, and the
+              confidence to turn vision into impact.</p>
+          </section>
+
+          <section id="introduction" tabindex="0" class="section-fade-in">
+            <h3>Champions Chest</h3>
+            <h4>The winners of every event at Technika will be honoured with:</h4>
+            <li>A Winner's Certificate</li>
+            <li>A Gold Medal</li>
+            <li>A Momento</li>
+            <h4>The runners-up will be awarded with:</h4>
+            <li>A Certificate of Achievement</li>
+            <li>A Silver Medal</li>
+            <li>A Momento</li>
+            <h4>The prestigious titles of Mr. Technika and Miss Technika:</h4>
+            <li>A Trophy</li>
+            <li>A Certificate</li><br>
+            These awards serve to recognize excellence, celebrate talent, and encourage young
+            achievers to continue striving for success.
+            <br><br>
+            <div class="Trophy">
+              <img src="images/trophy.png" alt="Trophy">
+              <img src="images/trophy.png" alt="Trophy">
+              <img src="images/trophy.png" alt="Trophy">
+            </div>
+          </section>
+
+          <section id="brochure" aria-labelledby="brochure-title" tabindex="0" class="section-fade-in">
+            <div class="flipbookkk">
+              <h3 class="flipbookkk-title">Event Brochure</h3>
+              <div>
+                <iframe src="https://publuu.com/flip-book/935028/2050311" width="100%" height="480" seamless="seamless"
+                  scrolling="no" frameBorder="0" allowFullScreen class="publuuflip"></iframe>
+              </div>
+            </div>
+          </section>
+          
+        </main>
+        <aside class="side-image" aria-label="Fest Visual">
+          <img id="myImage" src="images/Robot1.png" alt="Technika 5.0 - ROBO Visual" />
+          <audio id="roboaudio" src="images/Robo_voice.mp3"></audio>
+        </aside>
+
+      </div>
+
+      <!-- Sections START -->
+
+      <section class="section-fade-in convenor-section">
+        <h3>CONVENOR</h3>
+        <div class="coordinator-gallery">
+          <div class="coordinator-container">
+            <img src="images/Dr. Arvind Kumar Pandey.jpg" alt="Dr. Arvind Kumar Pandey">
+            <div class="overlay-text">Dr. Arvind Kumar Pandey<br>(Dean, SOEIT)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Dr. Ashwini Kumar.jpg" alt="Dr. Ashwini Kumar">
+            <div class="overlay-text">Dr. Ashwini Kumar<br>(Asst. Dean, SOEIT)</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-fade-in facultycoord-section">
+        <h3>FACULTY COORDINATORS</h3>
+        <div class="coordinator-gallery">
+          <div class="coordinator-container">
+            <img src="images/Prof. Mamatha V..jpg" alt="Faculty 1">
+            <div class="overlay-text">Prof. Mamatha V.<br>(Dept. of CS & IT)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Dr. Viranshu Kumar.jpg" alt="Faculty 2">
+            <div class="overlay-text">Dr. Viranshu Kumar<br>(Dept. of Mechanical Engineering)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Prof. Syed Rashid Anwar.jpg" alt="Faculty 3">
+            <div class="overlay-text">Prof. Syed Rashid Anwar<br>(Dept. of CS & IT)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Prof. Divya Paikaray.jpg" alt="Faculty 4">
+            <div class="overlay-text">Prof. Divya Paikaray<br>(Dept. of CS & IT)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Dr. Prem Nath Suman.jpg" alt="Faculty 5">
+            <div class="overlay-text">Dr. Prem Nath Suman<br>(Dept. of EEE)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Prof. Sayantani De.jpg" alt="Faculty 6">
+            <div class="overlay-text">Prof. Sayantani De<br>(Dept. of CS & IT)</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-fade-in studentcoord-section">
+        <h3>STUDENT COORDINATORS</h3>
+        <div class="coordinator-gallery">
+          <div class="coordinator-container">
+            <img src="images/Srijan Paul.jpg" alt="Student 1">
+            <div class="overlay-text">Srijan Paul<br>(B.Tech CSE 5th Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Raj Jet Sonkar.jpg" alt="Student 2">
+            <div class="overlay-text">Raj Jet Sonkar<br>(B.Tech CSE 5th Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Shubham Thakur.jpg" alt="Student 3">
+            <div class="overlay-text">Shubham Thakur<br>(B.Tech CSE 5th Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Nikita Gope.jpg" alt="Student 4">
+            <div class="overlay-text">Nikita Gope<br>(B.Tech CSE 3rd Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Adeeb Razi.jpg" alt="Student 5">
+            <div class="overlay-text">Adeeb Razi<br>(B.Tech CSE 3rd Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Swayam Nanda.jpg" alt="Student 6">
+            <div class="overlay-text">Swayam Nanda<br>(Diploma CSE 5th sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Prachi Biswas.jpg" alt="Student 7">
+            <div class="overlay-text">Prachi Biswas<br>(Diploma CSE 5th sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Saurav Kumar.jpg" alt="Student 8">
+            <div class="overlay-text">Saurav Kumar<br>(Diploma CSE 5th sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Prince Kumar Oajha.jpg" alt="Student 9">
+            <div class="overlay-text">Prince Kumar Oajha<br>(BCA 5th Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Himanshu Raj Verma.jpg" alt="Student 10">
+            <div class="overlay-text">Himanshu Raj Verma<br>(BCA 5th Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Abhishek Raj.jpg" alt="Student 11">
+            <div class="overlay-text">Abhishek Raj<br>(BCA 5th Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/Anurag Singh.jpg" alt="Student 12">
+            <div class="overlay-text">Anurag Singh<br>(BCA 5th Sem)</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-fade-in credits-section">
+        <h3>WEBSITE CREDITS</h3>
+        <p>
+          Developed by <strong>TECHNIKA Web Team</strong><br />
+          <strong>Members:</strong>
+        <div class="coordinator-gallery">
+          <div class="coordinator-container">
+            <img src="images/Sourav Agarwal.jpg" alt="Sourav Agarwal">
+            <div class="overlay-text">Sourav Agarwal<br>(B.Tech CSE 7th Sem)</div>
+          </div>
+          <div class="coordinator-container">
+            <img src="images/web team 2.jpg" alt="Web Team Member 2">
+            <div class="overlay-text">Web Team Member 2<br>(Class)</div>
+          </div>
+        </div>
+        </p>
+      </section>
+
+      <!-- Sections END -->
+    </div>
+    <footer class="footer">
+
+      <div class="footer-contact">
+        <p><strong>📍 Address:</strong> Opp. To Kerala Public School Vill.- Mohanpur, Gamharia, Dist. – Seraikela
+          Kharsawan, Jharkhand - 832108</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:technika@arkajainuniversity.ac.in"
+            class="email">technika@arkajainuniversity.ac.in</a></p>
+
+        <p>
+          <strong>Follow Us:</strong>
+          <a href="https://www.instagram.com/technika_aju" target="_blank" aria-label="Instagram">
+            <img src="images/insta.png" alt="Instagram" style="height: 20px; vertical-align: middle;">
+          </a>
+
+        </p>
+      </div>
+      <p>&copy; 2025 Technika - School Of Engineering & IT, Arka Jain University. </p>
+    </footer>
+  </div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+</html>
