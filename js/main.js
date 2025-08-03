@@ -6,22 +6,7 @@ document.addEventListener("mousemove", (e) => {
   cursor.style.top = `${e.clientY}px`;
 });
 
-  const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-  scrollTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-  window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    scrollTopBtn.style.display = "block";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
-});
-
-// Initial state
-scrollTopBtn.style.display = "none";
+ 
 
 
 const fadeInSections = document.querySelectorAll('.section-fade-in');
@@ -151,7 +136,22 @@ const colors = ["#6bdaf0", "#ffffff", "#352c77", "#8a4fc6"];
       card.classList.toggle("flipped");
     });
 
+ const scrollTopBtn = document.getElementById("scrollTopBtn");
 
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+// Initial state
+scrollTopBtn.style.display = "none";
 
 
 
