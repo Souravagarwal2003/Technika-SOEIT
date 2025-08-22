@@ -865,6 +865,9 @@ section h3 {
   border-radius: 16px;
 }
 
+li{
+  line-height: 1.6;
+}
 .slider img {
   width: 50rem;
   opacity: 0.8;
@@ -983,7 +986,7 @@ section h3 {
 }
 
 .background7 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.5)), url("../images/category.jpg");
+  background-image: linear-gradient(180deg, rgb(23 0 36 / 63%), rgb(13 0 33)), url("../images/category.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -992,6 +995,68 @@ section h3 {
   background-attachment: fixed;
 }
 
+.collaborator-section {
+    margin: 60px auto 40px;
+    max-width: 900px;
+    padding: 0 20px;
+    color: #fff;
+  }
+  .section-subtitle {
+    font-family: 'Audiowide', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00aced;
+  }
+  .collaborator-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .collaborator-card {
+    background: rgb(37 0 69 / 70%);
+    border-radius: 12px;
+    box-shadow: inset 0 0px 20px rgb(99 212 255);
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  .collaborator-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 172, 237, 0.6);
+  }
+  .collaborator-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #00aced;
+  }
+  .collaborator-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #00aced;
+  }
+  .collaborator-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #cce7ff;
+  }
+  @media (max-width: 700px) {
+    .collaborator-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    .collaborator-card {
+      width: 90%;
+      max-width: 320px;
+    }
+  }
 .sponsors-logos {
   display: flex;
   justify-content: center;

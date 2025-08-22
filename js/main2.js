@@ -31,16 +31,16 @@ const end = Date.now() + 15 * 100;
 
 // Memories slider
 const memories = [
-  { url: '../images/memories -1.jpg', alt: 'Students participating in robotics workshop 2023' },
-  { url: '../images/memories -2.jpg', alt: 'Audience watching keynote speech 2022' },
-  { url: '../images/memories -3.jpg', alt: 'Hackathon teams collaborating 2021' },
-  { url: '../images/memories -4.jpg', alt: 'Award ceremony with winner trophies 2023' },
-  { url: '../images/memories -5.jpg', alt: 'Students participating in robotics workshop 2023' },
-  { url: '../images/memories -6.jpg', alt: 'Audience watching keynote speech 2022' },
-  { url: '../images/memories -7.jpg', alt: 'Hackathon teams collaborating 2021' },
-  { url: '../images/memories -8.jpg', alt: 'Award ceremony with winner trophies 2023' },
-  { url: '../images/memories -9.jpg', alt: 'Hackathon teams collaborating 2021' },
-  { url: '../images/memories -10.jpg', alt: 'Award ceremony with winner trophies 2023' }
+  { url: '../images/memories -1.jpg', alt: 'memorie-1' },
+  { url: '../images/memories -2.jpg', alt: 'memorie-2' },
+  { url: '../images/memories -3.jpg', alt: 'memorie-3' },
+  { url: '../images/memories -4.jpg', alt: 'memorie-4' },
+  { url: '../images/memories -5.jpg', alt: 'memorie-5' },
+  { url: '../images/memories -6.jpg', alt: 'memorie-6' },
+  { url: '../images/memories -7.jpg', alt: 'memorie-7' },
+  { url: '../images/memories -8.jpg', alt: 'memorie-8' },
+  { url: '../images/memories -9.jpg', alt: 'memorie-9' },
+  { url: '../images/memories -10.jpg', alt: 'memorie-10' }
 ];
 let currentMemoryIndex = 0;
 const memoryImage = document.getElementById('memory-image');
