@@ -289,7 +289,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.796), rgb(29, 0, 58)), url("../images/bgimg10.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.893), rgb(29, 0, 58)), url("../images/bgimg10.jpg");
   box-shadow: 0px 0px 130px 130px rgb(29, 0, 58);
 }
 
@@ -297,7 +297,7 @@ header h1 {
   font-family: "Audiowide", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 6rem;
+  font-size: 6.5rem;
   letter-spacing: 0.2em;
  
   margin-bottom: 0rem;
@@ -1040,6 +1040,7 @@ li {
 @media (max-width: 720px) {
   header h1 {
     font-size: 2.5rem;
+     text-shadow: 0 0 20px #88edff;
   }
   .slider {
   position: relative;

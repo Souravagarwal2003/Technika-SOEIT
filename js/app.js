@@ -51,7 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 4,
+        "value": 2.5,
         "random": true,
         "anim": {
           "enable": false,
