@@ -42,33 +42,75 @@ const memories = [
   { url: '../images/memories -9.jpg', alt: 'memorie-9' },
   { url: '../images/memories -10.jpg', alt: 'memorie-10' }
 ];
-let currentMemoryIndex = 0;
-const memoryImage = document.getElementById('memory-image');
+
+let currentIndex = 0;
+const currentImg = document.getElementById('current-image');
+const nextImg = document.getElementById('next-image');
 const prevBtn = document.querySelector('.slider-btn.prev');
 const nextBtn = document.querySelector('.slider-btn.next');
 
-function showMemory(index) {
-  if (index < 0) index = memories.length - 1;
-  if (index >= memories.length) index = 0;
-  currentMemoryIndex = index;
-
-  memoryImage.style.opacity = 0;
-  setTimeout(() => {
-    memoryImage.src = memories[currentMemoryIndex].url;
-    memoryImage.alt = memories[currentMemoryIndex].alt;
-    memoryImage.style.opacity = 0.8;
-  }, 300);
+function setImage(imgElement, index) {
+  imgElement.src = memories[index].url;
+  imgElement.alt = memories[index].alt;
+  imgElement.style.transition = 'none';
+  imgElement.style.transform = 'translate(-50%, -50%) translateX(100%)'; // offscreen right
+  imgElement.style.opacity = '1';
 }
 
-prevBtn.addEventListener('click', () => showMemory(currentMemoryIndex - 1));  
-nextBtn.addEventListener('click', () => showMemory(currentMemoryIndex + 1));
+function slideTo(nextIndex) {
+  if (nextIndex < 0) nextIndex = memories.length - 1;
+  if (nextIndex >= memories.length) nextIndex = 0;
 
-// Auto-slide every 7s
-// setInterval(() => {
-//   showMemory(currentMemoryIndex + 1);
-// }, 5000);
+  // Prepare next image offscreen right
+  setImage(nextImg, nextIndex);
+nextImg.style.opacity = '0';  // start transparent
+  nextImg.style.transform = 'translate(-50%, -50%) translateX(100%)';
+  // Force reflow to apply initial styles before transition
+  void nextImg.offsetWidth;
 
-showMemory(0);
+  // Animate current image sliding left (out)
+  currentImg.style.transition = 'transform 0.7s ease, opacity 0.7s ease';
+  currentImg.style.transform = 'translate(-50%, -50%) translateX(-100%)';
+  currentImg.style.opacity = '0';
+
+  // Animate next image sliding from right (in)
+  nextImg.style.transition = 'transform 0.7s ease, opacity 0.7s ease';
+  nextImg.style.transform = 'translate(-50%, -50%) translateX(0)';
+  nextImg.style.opacity = '1';
+
+  // After animation completes, swap images and reset styles
+  setTimeout(() => {
+    currentImg.src = nextImg.src;
+    currentImg.alt = nextImg.alt;
+    currentImg.style.transition = 'none';
+    currentImg.style.transform = 'translate(-50%, -50%) translateX(0)';
+    currentImg.style.opacity = '1';
+
+    nextImg.style.transition = 'none';
+    nextImg.style.transform = 'translate(-50%, -50%) translateX(100%)';
+    nextImg.style.opacity = '0';
+
+    currentIndex = nextIndex;
+  }, 700);
+}
+
+// Initialize first image
+setImage(currentImg, currentIndex);
+currentImg.style.transform = 'translate(-50%, -50%) translateX(0)';
+currentImg.style.opacity = '1';
+
+// Buttons
+prevBtn.addEventListener('click', () => {
+  slideTo(currentIndex - 1);
+});
+nextBtn.addEventListener('click', () => {
+  slideTo(currentIndex + 1);
+});
+
+// Auto slide every 7 seconds
+setInterval(() => {
+  slideTo(currentIndex + 1);
+}, 2000);
 
 
 

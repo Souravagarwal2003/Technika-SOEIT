@@ -12,11 +12,11 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles3-js',
-
+  
   {
     "particles": {
       "number": {
-        "value": 150,
+        "value": 130,
         "density": {
           "enable": true,
           "value_area": 800
@@ -29,7 +29,7 @@ particlesJS('particles3-js',
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#00ffd6"
+          "color": "#00d9ffff"
         },
         "polygon": {
           "nb_sides": 20
@@ -41,7 +41,7 @@ particlesJS('particles3-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.4,
         "random": false,
         "anim": {
           "enable": false,
@@ -51,7 +51,7 @@ particlesJS('particles3-js',
         }
       },
       "size": {
-        "value": 5,
+        "value": 4,
         "random": true,
         "anim": {
           "enable": false,
@@ -69,7 +69,7 @@ particlesJS('particles3-js',
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 3,
         "direction": "none",
         "random": false,
         "straight": false,
