@@ -299,6 +299,7 @@ header h1 {
   font-style: normal;
   font-size: 6rem;
   letter-spacing: 0.2em;
+ 
   margin-bottom: 0rem;
   background: linear-gradient(90deg,
       #72dbed,
@@ -312,10 +313,11 @@ header h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 2px 2px 6px rgba(0, 12, 52, 0.718);
   /* Text border */
   /* -webkit-text-stroke: 0.05rem rgb(0, 0, 0); */
- 
+  /* color: #fff; */
+  text-shadow: 0 0 55px #88edff;
+  
   animation: gemini 15s linear infinite, popoutin 2s ease;
 }
 
